@@ -7,7 +7,7 @@ export const siteConfig = {
     domain: "https://duychuco.com",
   
     contact: {
-      address: "Hamlet 3, Phu Van Commune, Bu Gia Map District, Vietnam",
+      address: "Group 1, Hamlet 3, Phu Nghia Commune, Dong Nai City, Vietnam",
       phone: "+84382222696",
       phoneDisplay: "+84 382 222 696",
       whatsapp: "+84382222696",
