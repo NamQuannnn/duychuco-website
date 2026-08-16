@@ -6,67 +6,181 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#f7f8f2]">
       {/* Factory image */}
-      <div
-        className="absolute inset-0 overflow-hidden"
-        style={{
-          WebkitMaskImage:
-            "linear-gradient(to right, transparent 0%, transparent 28%, black 62%, black 100%)",
-          maskImage:
-            "linear-gradient(to right, transparent 0%, transparent 28%, black 62%, black 100%)",
-        }}
-      >
+      <div className="absolute inset-0">
         <img
           src="/images/factory/factory-aerial.jpg"
           alt=""
-          className="absolute left-[18%] top-0 h-full w-[118%] object-cover object-center"
+          className="
+            h-full w-full object-cover
+            object-[58%_center]
+            md:object-[65%_center]
+          "
         />
       </div>
 
-      {/* Light wash */}
-      <div className="pointer-events-none absolute inset-0 bg-[#f7f8f2]/10" />
+      {/* Desktop fade */}
+      <div
+        className="
+          absolute inset-0
+          hidden md:block
+          bg-gradient-to-r
+          from-[#f7f8f2]
+          via-[#f7f8f2]/90
+          via-[38%]
+          to-transparent
+        "
+      />
+
+      {/* Mobile fade */}
+      <div
+        className="
+          absolute inset-0
+          md:hidden
+          bg-gradient-to-r
+          from-[#f7f8f2]
+          via-[#f7f8f2]/85
+          via-[45%]
+          to-[#f7f8f2]/10
+        "
+      />
+
+      {/* subtle wash */}
+      <div className="absolute inset-0 bg-[#f7f8f2]/5" />
 
       <Container>
-        <div className="relative flex min-h-[680px] items-center py-24">
-          <div className="max-w-5xl">
-
+        <div
+          className="
+            relative flex
+            min-h-[620px]
+            items-center
+            py-16
+            sm:min-h-[650px]
+            md:min-h-[680px]
+            md:py-24
+          "
+        >
+          <div className="w-full max-w-4xl">
             {/* Eyebrow */}
-            <p className="mb-6 text-sm font-bold uppercase tracking-[0.22em] text-[#159447]">
+            <p
+              className="
+                mb-5
+                text-xs font-bold uppercase
+                tracking-[0.18em]
+                text-[#159447]
+                sm:text-sm
+                sm:tracking-[0.22em]
+              "
+            >
               Vietnamese Cashew Supplier
             </p>
 
-            {/* Company name - one line */}
-            <h1 className="whitespace-nowrap text-5xl font-semibold leading-none tracking-tight text-[#172014] sm:text-6xl lg:text-7xl">
+            {/* Company name */}
+            <h1
+              className="
+                max-w-full
+                text-[42px]
+                font-semibold
+                leading-[0.98]
+                tracking-[-0.04em]
+                text-[#172014]
+                sm:text-5xl
+                md:text-6xl
+                lg:text-7xl
+              "
+            >
               DUY CHU{" "}
-              <span className="text-[#159447]">CO., LTD</span>
+              <span className="text-[#159447]">
+                CO., LTD
+              </span>
             </h1>
 
             {/* Slogan */}
-            <p className="mt-5 text-xl font-medium italic text-[#6a755f]">
+            <p
+              className="
+                mt-6
+                max-w-md
+                text-xl
+                font-medium
+                italic
+                leading-relaxed
+                text-[#6a755f]
+                sm:text-2xl
+              "
+            >
               {siteConfig.slogan}
             </p>
 
             {/* Description */}
-            <p className="mt-6 max-w-xl text-lg leading-8 text-[#53604c]">
+            <p
+              className="
+                mt-7
+                max-w-lg
+                text-base
+                leading-7
+                text-[#53604c]
+                sm:text-lg
+                sm:leading-8
+              "
+            >
               Quality Vietnamese cashews for global partners.
             </p>
 
-            {/* Actions */}
-            <div className="mt-9 flex flex-wrap gap-4">
+            {/* Buttons */}
+            <div
+              className="
+                mt-9
+                flex
+                w-full
+                flex-col
+                gap-3
+                sm:w-auto
+                sm:flex-row
+                sm:flex-wrap
+                sm:gap-4
+              "
+            >
               <Link
                 href="/products"
-                className="rounded-full bg-[#159447] px-7 py-3.5 font-semibold text-white transition hover:bg-[#0f7738]"
+                className="
+                  inline-flex
+                  items-center
+                  justify-center
+                  rounded-full
+                  bg-[#159447]
+                  px-7 py-3.5
+                  font-semibold
+                  text-white
+                  transition
+                  hover:bg-[#0f7738]
+                  sm:w-auto
+                "
               >
                 Explore Our Products
               </Link>
 
               <Link
                 href="/contact"
-                className="rounded-full border border-[#26321c]/20 bg-white px-7 py-3.5 font-semibold text-[#26321c] transition hover:border-[#159447] hover:text-[#159447]"
+                className="
+                  inline-flex
+                  items-center
+                  justify-center
+                  rounded-full
+                  border
+                  border-[#26321c]/20
+                  bg-white/90
+                  px-7 py-3.5
+                  font-semibold
+                  text-[#26321c]
+                  backdrop-blur-sm
+                  transition
+                  hover:border-[#159447]
+                  hover:text-[#159447]
+                  sm:w-auto
+                "
               >
                 Contact Us
               </Link>
             </div>
-
           </div>
         </div>
       </Container>
