@@ -16,5 +16,5 @@ export const siteConfig = {
   
     products: ["WW450", "WW320", "WW240", "WS", "LP"],
   
-    certifications: ["BRCGS", "HACCP", "ISO", "FDA"],
+    certifications: ["BRCGS", "FDA"],
   };

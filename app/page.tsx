@@ -9,6 +9,7 @@ export default function Home() {
     <>
       <Hero />
 
+      {/* About */}
       <section className="bg-[#172014] py-24 text-white">
         <Container>
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-24">
@@ -42,8 +43,10 @@ export default function Home() {
         </Container>
       </section>
 
+      {/* Products */}
       <Products />
 
+      {/* Certifications */}
       <section className="bg-[#f7f8f2] py-24">
         <Container>
           <div className="mx-auto max-w-3xl text-center">
@@ -57,11 +60,11 @@ export default function Home() {
               Consistent commitment.
             </h2>
 
-            <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
+            <div className="mt-12 flex flex-wrap justify-center gap-4">
               {siteConfig.certifications.map((certification) => (
                 <div
                   key={certification}
-                  className="flex min-h-32 items-center justify-center rounded-2xl bg-white p-6 shadow-sm"
+                  className="flex min-h-32 w-48 items-center justify-center rounded-2xl border border-[#e2e6dc] bg-white p-6 shadow-sm"
                 >
                   <span className="text-xl font-bold text-[#26321c]">
                     {certification}
@@ -80,6 +83,7 @@ export default function Home() {
         </Container>
       </section>
 
+      {/* CTA */}
       <section className="bg-[#159447] py-20 text-white">
         <Container>
           <div className="flex flex-col justify-between gap-8 md:flex-row md:items-center">
