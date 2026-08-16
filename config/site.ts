@@ -1,9 +1,9 @@
 export const siteConfig = {
-    name: "DUY CHỮ CO., LTD",
-    shortName: "DUY CHỮ",
+    name: "DUY CHU CO., LTD",
+    shortName: "DUY CHU",
     slogan: "From one step to global reach",
     description:
-      "Duy Chữ Co., Ltd is a Vietnamese cashew company supplying quality cashew kernels to customers worldwide.",
+      "Duy Chu Co., Ltd is a Vietnamese cashew company supplying quality cashew kernels to customers worldwide.",
     domain: "https://duychuco.com",
   
     contact: {

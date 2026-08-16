@@ -5,7 +5,7 @@ import Container from "@/components/ui/Container";
 export const metadata: Metadata = {
   title: "Certifications",
   description:
-    "Explore the certifications and food safety standards held by Duy Chữ Co., Ltd.",
+    "Explore the certifications and food safety standards held by Duy Chu Co., Ltd.",
 };
 
 const certifications = [

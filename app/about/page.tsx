@@ -8,7 +8,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Duy Chữ Co., Ltd, a Vietnamese cashew company committed to quality, food safety and reliable long-term partnerships.",
+    "Learn about Duy Chu Co., Ltd, a Vietnamese cashew company committed to quality, food safety and reliable long-term partnerships.",
 };
 
 const values = [
@@ -48,7 +48,7 @@ export default function AboutPage() {
         <Container>
           <div className="relative py-24 md:py-32">
             <p className="mb-5 text-sm font-bold uppercase tracking-[0.22em] text-[#159447]">
-              About Duy Chữ
+              About Duy Chu
             </p>
 
             <h1 className="max-w-4xl text-5xl font-semibold leading-[1.05] tracking-tight text-[#172014] md:text-7xl">
@@ -112,7 +112,7 @@ export default function AboutPage() {
                 <div className="flex h-64 w-64 items-center justify-center rounded-full bg-white p-10 md:h-80 md:w-80 md:p-12">
                     <Image
                     src="/images/cropped-icon.png"
-                    alt="Duy Chữ"
+                    alt="Duy Chu"
                     width={260}
                     height={260}
                     className="h-full w-full object-contain"
@@ -232,7 +232,7 @@ export default function AboutPage() {
           <div className="flex flex-col justify-between gap-8 md:flex-row md:items-center">
             <div>
               <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-white/70">
-                Connect With Duy Chữ
+                Connect With Duy Chu
               </p>
 
               <h2 className="text-4xl font-semibold tracking-tight md:text-5xl">

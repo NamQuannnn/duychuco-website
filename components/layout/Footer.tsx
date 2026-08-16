@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <Image
               src="/images/logo.png"
-              alt="Duy Chữ Co., Ltd"
+              alt="Duy Chu Co., Ltd"
               width={160}
               height={80}
               className="mb-5 h-20 w-auto rounded bg-white object-contain p-1"
@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 py-6 text-sm text-white/45">
-          © {new Date().getFullYear()} Duy Chữ Co., Ltd. All rights reserved.
+          © {new Date().getFullYear()} Duy Chu Co., Ltd. All rights reserved.
         </div>
       </Container>
     </footer>

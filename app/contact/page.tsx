@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Duy Chữ Co., Ltd for cashew product inquiries, business cooperation and international supply.",
+    "Contact Duy Chu Co., Ltd for cashew product inquiries, business cooperation and international supply.",
 };
 
 const whatsappLink = `https://wa.me/${siteConfig.contact.whatsapp.replace(/\D/g, "")}`;
@@ -31,7 +31,7 @@ export default function ContactPage() {
             </h1>
 
             <p className="mt-8 max-w-2xl text-lg leading-8 text-[#5c6756]">
-              Get in touch with Duy Chữ Co., Ltd for product inquiries,
+              Get in touch with Duy Chu Co., Ltd for product inquiries,
               business cooperation and international cashew supply.
             </p>
           </div>

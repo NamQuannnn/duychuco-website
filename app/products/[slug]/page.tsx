@@ -119,7 +119,7 @@ export async function generateMetadata({
 
   return {
     title: `${product.code} - ${product.name}`,
-    description: `${product.name} cashew kernels supplied by Duy Chữ Co., Ltd.`,
+    description: `${product.name} cashew kernels supplied by Duy Chu Co., Ltd.`,
   };
 }
 

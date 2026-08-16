@@ -6,7 +6,7 @@ import Container from "@/components/ui/Container";
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "Explore Duy Chữ Co., Ltd cashew kernel grades including WW450, WW320, WW240, WS and LP.",
+    "Explore Duy Chu Co., Ltd cashew kernel grades including WW450, WW320, WW240, WS and LP.",
 };
 
 const products = [

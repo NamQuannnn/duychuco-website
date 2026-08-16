@@ -15,7 +15,7 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-24">
             <div>
               <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-[#a8cf45]">
-                About Duy Chữ
+                About Duy Chu
               </p>
 
               <h2 className="text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
@@ -27,7 +27,7 @@ export default function Home() {
 
             <div>
               <p className="text-lg leading-8 text-white/70">
-                Duy Chữ Co., Ltd is a Vietnamese cashew company focused on
+                Duy Chu Co., Ltd is a Vietnamese cashew company focused on
                 supplying quality cashew kernels and building dependable
                 relationships with customers around the world.
               </p>
@@ -101,7 +101,7 @@ export default function Home() {
               href="/contact"
               className="inline-flex w-fit rounded-full bg-white px-7 py-3.5 font-semibold text-[#159447] transition hover:bg-[#f2f5ec]"
             >
-              Contact Duy Chữ
+              Contact Duy Chu
             </Link>
           </div>
         </Container>

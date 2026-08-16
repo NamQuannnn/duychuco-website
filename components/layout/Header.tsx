@@ -18,7 +18,7 @@ export default function Header() {
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logo.png"
-              alt="Duy Chữ Co., Ltd"
+              alt="Duy Chu Co., Ltd"
               width={150}
               height={70}
               className="h-16 w-auto object-contain"
