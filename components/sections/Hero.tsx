@@ -5,18 +5,40 @@ import { siteConfig } from "@/config/site";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#f7f8f2]">
+      {/* =====================================================
+          FACTORY IMAGE
+          
+          MOBILE:
+          left-[0%]  = vị trí ngang
+          w-[115%]   = độ phóng ảnh
+
+          DESKTOP:
+          md:left-[8%] = vị trí ngang
+          md:w-[105%]  = độ phóng ảnh
+
+          Muốn ảnh dịch SANG PHẢI → tăng left
+          Muốn ảnh dịch SANG TRÁI  → giảm left / dùng số âm
+      ====================================================== */}
       {/* Factory image */}
-      <div className="absolute inset-0">
-        <img
-          src="/images/factory/factory-aerial.jpg"
-          alt=""
-          className="
-            h-full w-full object-cover
-            object-[58%_center]
-            md:object-[65%_center]
-          "
-        />
-      </div>
+        <div className="absolute inset-0 overflow-hidden">
+            <img
+            src="/images/factory/factory-aerial.jpg"
+            alt=""
+            className="
+                absolute
+                top-0
+                left-[-20%]
+                h-full
+                w-[140%]
+                max-w-none
+                object-cover
+                translate-x-[10%]
+                md:left-[-15%]
+                md:w-[130%]
+                md:translate-x-[18%]
+            "
+            />
+        </div>
 
       {/* Desktop fade */}
       <div
@@ -44,7 +66,7 @@ export default function Hero() {
         "
       />
 
-      {/* subtle wash */}
+      {/* Subtle wash */}
       <div className="absolute inset-0 bg-[#f7f8f2]/5" />
 
       <Container>
@@ -64,7 +86,9 @@ export default function Hero() {
             <p
               className="
                 mb-5
-                text-xs font-bold uppercase
+                text-xs
+                font-bold
+                uppercase
                 tracking-[0.18em]
                 text-[#159447]
                 sm:text-sm
@@ -147,7 +171,8 @@ export default function Hero() {
                   justify-center
                   rounded-full
                   bg-[#159447]
-                  px-7 py-3.5
+                  px-7
+                  py-3.5
                   font-semibold
                   text-white
                   transition
@@ -168,7 +193,8 @@ export default function Hero() {
                   border
                   border-[#26321c]/20
                   bg-white/90
-                  px-7 py-3.5
+                  px-7
+                  py-3.5
                   font-semibold
                   text-[#26321c]
                   backdrop-blur-sm
