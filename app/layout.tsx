@@ -11,9 +11,6 @@ export const metadata: Metadata = {
     template: "%s | Duy Chu Co., Ltd",
   },
   description: siteConfig.description,
-  icons: {
-    icon: "/images/icon.png",
-  },
 };
 
 export default function RootLayout({
