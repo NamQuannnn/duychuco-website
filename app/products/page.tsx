@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
+import PageHero from "@/components/ui/PageHero";
 
 export const metadata: Metadata = {
   title: "Products",
@@ -55,29 +56,11 @@ const products = [
 export default function ProductsPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-[#f7f8f2]">
-        <div className="absolute -right-24 top-0 h-80 w-80 rounded-full bg-[#dff000]/20 blur-3xl" />
-
-        <Container>
-          <div className="relative py-24 md:py-32">
-            <p className="mb-5 text-sm font-bold uppercase tracking-[0.22em] text-[#159447]">
-              Our Products
-            </p>
-
-            <h1 className="max-w-4xl text-5xl font-semibold leading-[1.05] tracking-tight text-[#172014] md:text-7xl">
-              Cashew kernels
-              <br />
-              for global markets.
-            </h1>
-
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-[#5c6756]">
-              We supply a focused range of Vietnamese cashew kernel grades for
-              customers across international markets.
-            </p>
-          </div>
-        </Container>
-      </section>
+      <PageHero
+        eyebrow="Our Products"
+        title="Vietnamese cashews for global markets."
+        description="Quality cashew kernels supplied with consistency, careful handling and reliable service."
+        />
 
       {/* Product Range */}
       <section className="bg-white py-24">

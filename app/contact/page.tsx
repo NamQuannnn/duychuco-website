@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
 import { siteConfig } from "@/config/site";
+import PageHero from "@/components/ui/PageHero";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -14,29 +15,11 @@ const whatsappLink = `https://wa.me/${siteConfig.contact.whatsapp.replace(/\D/g,
 export default function ContactPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-[#f7f8f2]">
-        <div className="absolute -right-24 top-0 h-80 w-80 rounded-full bg-[#dff000]/20 blur-3xl" />
-
-        <Container>
-          <div className="relative py-24 md:py-32">
-            <p className="mb-5 text-sm font-bold uppercase tracking-[0.22em] text-[#159447]">
-              Contact Us
-            </p>
-
-            <h1 className="max-w-4xl text-5xl font-semibold leading-[1.05] tracking-tight text-[#172014] md:text-7xl">
-              Let&apos;s start
-              <br />
-              a conversation.
-            </h1>
-
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-[#5c6756]">
-              Get in touch with Duy Chu Co., Ltd for product inquiries,
-              business cooperation and international cashew supply.
-            </p>
-          </div>
-        </Container>
-      </section>
+      <PageHero
+        eyebrow="Contact Us"
+        title="Let’s build a connection."
+        description="Get in touch with Duy Chu Co., Ltd for product inquiries, business opportunities and long-term partnerships."
+        />
 
       {/* Contact information */}
       <section className="bg-white py-24">

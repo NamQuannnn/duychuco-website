@@ -4,6 +4,7 @@ import Image from "next/image";
 import Container from "@/components/ui/Container";
 import Partners from "@/components/sections/Partners";
 import { siteConfig } from "@/config/site";
+import PageHero from "@/components/ui/PageHero";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -41,34 +42,45 @@ const values = [
 export default function AboutPage() {
   return (
     <>
-      {/* Page Hero */}
-      <section className="relative overflow-hidden bg-[#f7f8f2]">
-        <div className="absolute -right-24 top-0 h-80 w-80 rounded-full bg-[#dff000]/20 blur-3xl" />
+      <PageHero
+        eyebrow="About Duy Chu"
+        title="Growing connections through quality."
+        description="A Vietnamese cashew company focused on quality products, responsible operations and dependable partnerships."
+      />
 
+      {/* Company + Factory */}
+      <section className="bg-white py-20 md:py-24">
         <Container>
-          <div className="relative py-24 md:py-32">
-            <p className="mb-5 text-sm font-bold uppercase tracking-[0.22em] text-[#159447]">
-              About Duy Chu
-            </p>
+          <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
 
-            <h1 className="max-w-4xl text-5xl font-semibold leading-[1.05] tracking-tight text-[#172014] md:text-7xl">
-              Growing connections
-              <br />
-              through quality.
-            </h1>
+            {/* Factory Image */}
+            <div>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-[#eef1e9]">
+                <Image
+                  src="/images/factory/factory-main.jpg"
+                  alt="Duy Chu cashew processing facility in Dong Nai, Vietnam"
+                  fill
+                  priority
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 55vw"
+                />
 
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-[#5c6756]">
-              A Vietnamese cashew company focused on quality products,
-              responsible operations and dependable partnerships.
-            </p>
-          </div>
-        </Container>
-      </section>
+                {/* subtle image wash */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#172014]/15 via-transparent to-transparent" />
 
-      {/* Company */}
-      <section className="bg-white py-24">
-        <Container>
-          <div className="grid gap-14 lg:grid-cols-2 lg:gap-24">
+                {/* label */}
+                <div className="absolute bottom-5 left-5 rounded-full bg-white/90 px-4 py-2 text-sm font-semibold text-[#26321c] backdrop-blur-sm">
+                  Dong Nai, Vietnam
+                </div>
+              </div>
+
+              <p className="mt-4 text-sm leading-6 text-[#7a8474]">
+                Duy Chu&apos;s cashew processing facility in Dong Nai,
+                Vietnam.
+              </p>
+            </div>
+
+            {/* Company Content */}
             <div>
               <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-[#159447]">
                 Our Company
@@ -79,26 +91,36 @@ export default function AboutPage() {
                 <br />
                 Global perspective.
               </h2>
-            </div>
 
-            <div className="space-y-6 text-lg leading-8 text-[#5c6756]">
-              <p>
-                {siteConfig.name} is a Vietnamese cashew company supplying
-                cashew kernels for customers and markets around the world.
-              </p>
+              <div className="mt-8 space-y-5 text-lg leading-8 text-[#5c6756]">
+                <p>
+                  {siteConfig.name} supplies Vietnamese cashew kernels to
+                  customers and partners across international markets.
+                </p>
 
-              <p>
-                Our approach is built around product consistency, food safety
-                and reliable cooperation. From every order to every business
-                relationship, we aim to create value through responsible work
-                and clear communication.
-              </p>
+                <p>
+                  Our work is built around consistent quality, food safety and
+                  reliable cooperation at every stage of the business.
+                </p>
 
-              <p>
-                As we continue to grow, our focus remains simple: deliver
-                quality products, strengthen trusted partnerships and connect
-                Vietnamese cashews with the global market.
-              </p>
+                <p>
+                  From our facility in Dong Nai, we continue building trusted
+                  connections between Vietnamese cashews and the global market.
+                </p>
+              </div>
+
+              {/* Location detail */}
+              <div className="mt-9 border-t border-[#e4e8df] pt-6">
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#159447]">
+                  Our Facility
+                </p>
+
+                <p className="mt-2 max-w-md text-sm leading-6 text-[#65705f]">
+                  Group 1, Hamlet 3, Phu Nghia Commune,
+                  <br />
+                  Dong Nai City, Vietnam
+                </p>
+              </div>
             </div>
           </div>
         </Container>
@@ -108,17 +130,18 @@ export default function AboutPage() {
       <section className="bg-[#172014] py-24 text-white">
         <Container>
           <div className="grid items-center gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
+
             <div className="flex justify-center lg:justify-start">
-                <div className="flex h-64 w-64 items-center justify-center rounded-full bg-white p-10 md:h-80 md:w-80 md:p-12">
-                    <Image
-                    src="/images/cropped-icon.png"
-                    alt="Duy Chu"
-                    width={260}
-                    height={260}
-                    className="h-full w-full object-contain"
-                    />
-                </div>
-                </div>
+              <div className="flex h-64 w-64 items-center justify-center rounded-full bg-white p-10 md:h-80 md:w-80 md:p-12">
+                <Image
+                  src="/images/cropped-icon.png"
+                  alt="Duy Chu"
+                  width={260}
+                  height={260}
+                  className="h-full w-full object-contain"
+                />
+              </div>
+            </div>
 
             <div>
               <p className="mb-5 text-sm font-bold uppercase tracking-[0.2em] text-[#a8cf45]">

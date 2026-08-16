@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Container from "@/components/ui/Container";
+import PageHero from "@/components/ui/PageHero";
 
 export const metadata: Metadata = {
   title: "Certifications",
@@ -30,29 +31,11 @@ const certifications = [
 export default function CertificationsPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-[#f7f8f2]">
-        <div className="absolute -right-24 top-0 h-80 w-80 rounded-full bg-[#dff000]/20 blur-3xl" />
-
-        <Container>
-          <div className="relative py-24 md:py-32">
-            <p className="mb-5 text-sm font-bold uppercase tracking-[0.22em] text-[#159447]">
-              Certifications
-            </p>
-
-            <h1 className="max-w-4xl text-5xl font-semibold leading-[1.05] tracking-tight text-[#172014] md:text-7xl">
-              Standards you
-              <br />
-              can trust.
-            </h1>
-
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-[#5c6756]">
-              Our certifications reflect our commitment to food safety,
-              consistent quality and responsible operations.
-            </p>
-          </div>
-        </Container>
-      </section>
+      <PageHero
+        eyebrow="Certifications"
+        title="Standards you can trust."
+        description="Our commitment to quality and food safety is supported by recognized standards and certifications."
+      />
 
       {/* Certificates */}
       <section className="bg-white py-24">
