@@ -19,7 +19,7 @@ export default function ContactPage() {
         eyebrow="Contact Us"
         title="Let’s build a connection."
         description="Get in touch with Duy Chu Co., Ltd for product inquiries, business opportunities and long-term partnerships."
-        />
+      />
 
       {/* Contact information */}
       <section className="bg-white py-24">
@@ -44,60 +44,60 @@ export default function ContactPage() {
             </div>
 
             <div className="grid gap-5 sm:grid-cols-2">
-              {/* Address */}
-              <div className="rounded-3xl border border-[#e2e6dc] bg-[#f8f9f5] p-8">
-                <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#159447]">
-                  Address
-                </p>
+                {/* Address */}
+                <div className="rounded-3xl border border-[#e2e6dc] bg-[#f8f9f5] p-8">
+                    <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#159447]">
+                    Address
+                    </p>
 
-                <p className="mt-5 leading-7 text-[#33402d]">
-                  {siteConfig.contact.address}
-                </p>
-              </div>
+                    <p className="mt-5 text-lg font-normal leading-7 text-[#33402d]">
+                    {siteConfig.contact.address}
+                    </p>
+                </div>
 
-              {/* Phone */}
-              <a
-                href={`tel:${siteConfig.contact.phone}`}
-                className="group rounded-3xl border border-[#e2e6dc] bg-[#f8f9f5] p-8 transition hover:-translate-y-1 hover:border-[#159447]/40 hover:shadow-lg"
-              >
-                <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#159447]">
-                  Phone
-                </p>
+                {/* Phone */}
+                <a
+                    href={`tel:${siteConfig.contact.phone}`}
+                    className="group rounded-3xl border border-[#e2e6dc] bg-[#f8f9f5] p-8 transition hover:-translate-y-1 hover:border-[#159447]/40 hover:shadow-lg"
+                >
+                    <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#159447]">
+                    Phone
+                    </p>
 
-                <p className="mt-5 text-xl font-semibold text-[#172014] group-hover:text-[#159447]">
-                  {siteConfig.contact.phoneDisplay}
-                </p>
-              </a>
+                    <p className="mt-5 text-lg font-normal leading-7 text-[#33402d] transition group-hover:text-[#159447]">
+                    {siteConfig.contact.phoneDisplay}
+                    </p>
+                </a>
 
-              {/* WhatsApp */}
-              <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group rounded-3xl border border-[#e2e6dc] bg-[#f8f9f5] p-8 transition hover:-translate-y-1 hover:border-[#159447]/40 hover:shadow-lg"
-              >
-                <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#159447]">
-                  WhatsApp
-                </p>
+                {/* WhatsApp */}
+                <a
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group rounded-3xl border border-[#e2e6dc] bg-[#f8f9f5] p-8 transition hover:-translate-y-1 hover:border-[#159447]/40 hover:shadow-lg"
+                >
+                    <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#159447]">
+                    WhatsApp
+                    </p>
 
-                <p className="mt-5 text-xl font-semibold text-[#172014] group-hover:text-[#159447]">
-                  {siteConfig.contact.phoneDisplay}
-                </p>
-              </a>
+                    <p className="mt-5 text-lg font-normal leading-7 text-[#33402d] transition group-hover:text-[#159447]">
+                    {siteConfig.contact.phoneDisplay}
+                    </p>
+                </a>
 
-              {/* Email */}
-              <a
-                href={`mailto:${siteConfig.contact.email}`}
-                className="group rounded-3xl border border-[#e2e6dc] bg-[#f8f9f5] p-8 transition hover:-translate-y-1 hover:border-[#159447]/40 hover:shadow-lg"
-              >
-                <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#159447]">
-                  Email
-                </p>
+                {/* Email */}
+                <a
+                    href={`mailto:${siteConfig.contact.email}`}
+                    className="group min-w-0 rounded-3xl border border-[#e2e6dc] bg-[#f8f9f5] p-8 transition hover:-translate-y-1 hover:border-[#159447]/40 hover:shadow-lg"
+                >
+                    <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#159447]">
+                    Email
+                    </p>
 
-                <p className="mt-5 break-all text-lg font-semibold text-[#172014] group-hover:text-[#159447]">
-                  {siteConfig.contact.email}
-                </p>
-              </a>
+                    <p className="mt-5 whitespace-nowrap text-lg font-normal leading-7 tracking-tight text-[#33402d] transition group-hover:text-[#159447]">
+                    {siteConfig.contact.email}
+                    </p>
+                </a>
             </div>
           </div>
         </Container>
